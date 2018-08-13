@@ -73,7 +73,15 @@
 "use strict";
 
 
-var APP = 1;
+var _loop = function _loop(i) {
+    setTimeout(function () {
+        console.log(i);
+    }, 1000);
+};
+
+for (var i = 0; i < 5; i++) {
+    _loop(i);
+}
 
 /***/ })
 /******/ ]);
