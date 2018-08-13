@@ -73,15 +73,36 @@
 "use strict";
 
 
-var _loop = function _loop(i) {
-    setTimeout(function () {
-        console.log(i);
-    }, 1000);
+// // const original = function () {
+// //     return 100;
+// // };
+//
+// // console.log(original());
+//
+// // const arrow = (num1, num2) => {
+// //     return num1 + num2;
+// // };
+//
+//
+// const arrow2 = (num1, num2) => num1 + num2;
+//
+//
+// console.log(arrow2(40, 34));
+
+
+var obj = {
+    name: 'WFM',
+
+    logName: function logName() {
+        var _this = this;
+
+        setTimeout(function () {
+            console.log('Name: ' + _this.name);
+        }, 2000);
+    }
 };
 
-for (var i = 0; i < 5; i++) {
-    _loop(i);
-}
+obj.logName();
 
 /***/ })
 /******/ ]);
